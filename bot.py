@@ -79,7 +79,7 @@ async def voice_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         )
         return
 
-    status_message = await message.reply_text("Слушаю голосовое и расшифровываю...")
+    status_message = await message.reply_text("Я работаю...")
 
     try:
         voice_file = await message.voice.get_file()

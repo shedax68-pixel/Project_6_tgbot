@@ -5,6 +5,7 @@ This folder contains project notes for the Telegram bot.
 ## Pages
 
 - [Voice Transcription](voice-transcription.md): how Telegram voice messages are transcribed with Deepgram.
+- [Deployment](deployment.md): GitHub-first deployment flow for the VPS.
 
 ## Quick Start
 

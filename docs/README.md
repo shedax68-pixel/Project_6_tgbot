@@ -14,6 +14,8 @@ Create `.env` in the project root:
 ```env
 BOT_TOKEN=your_telegram_bot_token
 DEEPGRAM_API_KEY=your_deepgram_api_key
+GROQ_API_KEY=your_groq_api_key
+GROQ_MODEL=llama-3.3-70b-versatile
 ```
 
 Install dependencies:

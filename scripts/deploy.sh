@@ -30,8 +30,8 @@ commit_sha="$(git rev-parse HEAD)"
 
 ssh "$SERVER" "set -e
 cd '$APP_DIR'
-git fetch origin '$BRANCH'
-git reset --hard '$commit_sha'
+git -c safe.directory='$APP_DIR' fetch origin '$BRANCH'
+git -c safe.directory='$APP_DIR' reset --hard '$commit_sha'
 .venv/bin/python -m pip install -r requirements.txt
 chown -R telegrambot:telegrambot '$APP_DIR'
 systemctl restart '$SERVICE'
